@@ -1,1 +1,14 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nemo umquam voluptatem appellavit, appellat; Materiam vero rerum et copiam apud hos exilem, apud illos uberrimam reperiemus. Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Ergo opifex plus sibi proponet ad formarum quam civis excellens ad factorum pulchritudinem? Quod si ita sit, cur opera philosophiae sit danda nescio. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. Satis est tibi in te, satis in legibus, satis in mediocribus amicitiis praesidii. Duo Reges: constructio interrete. Cur igitur easdem res, inquam, Peripateticis dicentibus verbum nullum est, quod non intellegatur? Non risu potius quam oratione eiciendum? At vero illa, quae Peripatetici, quae Stoici dicunt, semper tibi in ore sunt in iudiciis, in senatu. Videsne igitur Zenonem tuum cum Aristone verbis concinere, re dissidere, cum Aristotele et illis re consentire, verbis discrepare?
+## So every dollar you give will be doubled!
+
+You can help us by giving your tax-deductible gift in four ways:
+
+Go to the [DONATION ITEMS](#products) below and select an item.
+
+1. Click on that item to donate online!
+1. Or, if you want to donate a certain amount directly to the general fund, [please click here to support GIOF](http://giof.org/support_giof/).
+1. You can also avoid the computer and send a check made out to GIOF, and send it to GIOF, PO Box 6458, Chula Vista, CA 91909
+1. If possible, please consider making your gift a monthly online pledge.
+
+Most of the donation items below show two options for payment: a full-price cost, or a monthly pledge, paying 1/12 each month.
+
+Thank you.

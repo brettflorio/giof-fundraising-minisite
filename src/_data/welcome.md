@@ -1,5 +1,6 @@
-Here you can add text for your welcome section. This is the first text that a visitor will see, so you probably want to make this friendly and personable, or describe the purpose of this site.
+Fourteen years ago when we rescued two very sick little girls, God called upon our hearts ❤ to open Beautiful Gate Orphanage. That dream is now a fully functional orphanage dedicated to abandoned special-needs children, whom we call Fragile Butterflies 🦋. We deeply love ❤ them and they bless us abundantly.
 
-You can use any any [Markdown formatting](https://guides.github.com/features/mastering-markdown/) you'd like, or embed HTML. It's up to you :)
+In partnership with you, we can and are making a difference for them!
 
-Immediately below are links to YouTube videos. If you only have 1 video, the following section will hide. If you have multiple, clicking on the links will change the videos to the left (or on top, if you're on mobile).
+[Help us meet our Matching Grant!](#matching-grant)
+$14,000 already raised of the $30,000 grant

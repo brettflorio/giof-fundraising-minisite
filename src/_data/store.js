@@ -5,9 +5,9 @@
  *
  */
 foxyDefaultValues = {
-	storedomain: "jamstackecommerceexample",
-	name: "My Store",
-	logo: "static/logo.png", // Relative to the web root
+	storedomain: "giof",
+	name: "Genesis International Orphanage Foundation",
+	logo: "static/img/GIOF-logo-color-350pix-300x98.jpg", // Relative to the web root
 };
 
 /**
