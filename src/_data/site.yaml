@@ -37,18 +37,15 @@ currency_symbol: $
 # Careful! Use quotes around your links.
 social_networks:
   blog:
-    url: "https://www.foxy.io/blog/"
+    url: "http://giof.org/"
     icon: "fas fa-blog-square"
   email:
-    url: "hello@foxy.io"
+    url: "http://giof.org/contact-us/"
     icon: "fas fa-envelope-square"
     protocol: "mailto"
   facebook:
-    url: "https://www.facebook.com/foxycart"
+    url: "https://www.facebook.com/GenesisDiez/"
     icon: "fab fa-facebook-square"
-  twitter:
-    url: "https://twitter.com/foxycart"
-    icon: "fab fa-twitter-square"
   youtube:
-    url: "https://www.youtube.com/foxycart"
+    url: "https://www.youtube.com/channel/UCPYuKWST08z9LoMvflR_AIw"
     icon: "fab fa-youtube"
