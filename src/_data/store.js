@@ -5,7 +5,7 @@
  *
  */
 foxyDefaultValues = {
-	storedomain: "giof",
+	storedomain: "giof.foxycart.com",
 	name: "Genesis International Orphanage Foundation",
 	logo: "static/img/GIOF-logo-color-350pix-300x98.jpg", // Relative to the web root
 };
