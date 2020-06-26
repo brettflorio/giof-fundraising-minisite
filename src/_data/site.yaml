@@ -29,7 +29,7 @@ navigation:
 texts:
   highlightsTitle: "Watch our 2020 Videos!"
   highlightsText: "Click the links below to load up videos showing what we've been doing."
-  aboutTitle: "$30,000 matching grant"
+  aboutTitle: ""
   productsTitle: "Donation Items"
 
 currency_symbol: $
