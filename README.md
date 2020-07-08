@@ -2,6 +2,8 @@
 
 Kickstart your ecommerce with a few clicks. Perfect for non-profit fundraising mini-sites, live events, or anybody looking to build a clean one-page ecommerce or donation site.
 
+Original repo is [Foxy/eleventy-fundraising-minisite](https://github.com/Foxy/eleventy-fundraising-minisite/edit/master/README.md). Related blog post at [Foxy.io](https://www.foxy.io/blog/building-a-turnkey-fundraising-mini-site-with-foxy-and-eleventy/).
+
 ## Who This Is For (and Prerequisites)
 
 This project is primarily intended for web designers and developers (professional and amateur) who have at least a basic knowledge of editing code and using Git, and who want to get an ecommerce/fundraising/donation website up and running quickly, with minimal cost and maintenance. Experience with using your terminal and running Node and `npm` will be needed if you want to do local development, but isn't strictly required.
@@ -18,6 +20,8 @@ Click the `deploy` button below, and in a few minutes you'll have:
 Seriously, if you haven't seen how deploying to Netlify works before, it's almost magical. 🧙🏽‍♀️
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Foxy/eleventy-fundraising-minisite"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
+(Note that if you want to keep your site updated with any bugfixes or new functionality from this repo, follow the steps in the [How to Use This Project](#how-to-use-this-project) section instead.)
 
 # Overview
 
@@ -57,29 +61,25 @@ We're adding relevant comments to the code so that you understand clearly where 
 
 # How to Use This Project
 
-There are two ways for you to start your own JAMstack ecommerce using this repository. You may fork it and customize it, or you may start your own from scratch following the tutorial below.
+## 1. Set up a Foxy.io Store
 
-## 1. Fork it!
-
-If you want to fork it, go ahead! Every file is documented so that you will know what to tweak and how.
-
-Simply click the fork me button, and you will have your own version of the repository.
+Go to [Foxy.io](https://foxy.io/) and create an account, if you don't already have one. It's free during development, so don't worry about that. You can change any of your settings later. The important thing is to create a store and copy out the domain (like `example.foxycart.com`) to use in the next step.
 
 ## 2. Deploy it!!
 
-**Already?** Yup, that's it! You can now deploy your own version of the site so that you can already see it in production.
+The easiest thing to do is to simply click this button: <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Foxy/eleventy-fundraising-minisite"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Foxy/eleventy-fundraising-minisite"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+If you'd rather, you can fork this repo, then deploy it to Netlify yourself (which is still super straighforward). That way you'll be able to pull bugfixes and new features (and submit fixes), but that may not be a huge deal to you. If you fork it, you'll end up with a repo named the same as this repo, though, which may not be ideal.
 
-**What next?** You do need to configure your own Foxy.io account and set things like your store domain and payment settings (PayPal, Stripe, Square, Authorize.net, etc.), but all the heavy lifting is done. Read on to learn how to customize your content, products, videos, etc.
-
-## 3. Hack it!!!
+## 3. Customize it!!!
 
 It's time to get our hands dirty.
 
 ### Running Things Locally
 
-We're going to assume you've got git, node, and npm set up already. If not, this may be a bit advanced. You can still work with this repository directly by modifying files in Github, but you'll probably want to spend a bit of time do a bit of googling Clone your repo to your computer, go to the directory in your terminal, and run the following:
+We're going to assume you've got git, node, and npm set up already. If not, this may be a bit advanced. You can still work with this repository directly by modifying files in Github, but you'll probably want to do a bit of googling to get those pieces set up. Once you've done that…
+
+Clone your repo to your computer, go to the directory in your terminal, and run the following:
 
 ```bash
 npm i
@@ -98,11 +98,12 @@ Load up that URL in your browser and see your site! And, extra cool: If you chan
 
 ### Step By Step
 
+1. **Set your site title and text and such:** Edit `src/_data/site.yaml` file. You'll find you can customize most of the site's texts there. You can set the navigation links, highlight texts, and display messages to your users.
+1. **Set your Foxy store config:** Edit `src/_data/store.js`. These values can come from the Netlify environment variables, but you may want to set them here for your local development.
 1. **Set your own products:** There's a `_products` folder. Replace the products with your own. We'll go into detail in the [Detailed Product Step-By-Step](#detailed-product-step-by-step), which includes fetching products from an external API.
-1. **Set your own logo:** Replace the `src/static/img/mylogo.png` file with your own. Also, replace the _favicon_ files in `src/static/img/`. (Try [favicon.io](https://favicon.io/) to make it easy.)
+1. **Set your own logo:** Replace the `src/static/logo.png` file with your own. Also, replace the _favicon_ files in `src/static/img/`. Alternately, you can change the logo filename or location by editing the `store.js` file. (Try [favicon.io](https://favicon.io/) to make it easy. The placeholder logo is from [DesignEvo free logo creator](https://www.designevo.com/logo-maker/).)
 1. **Set your own theme:** If you are comfortable with CSS and TailwindCSS, go for it. If you aren't, check out the `tailwind.config.js` file in the root directory of the project. By setting these variables, you can start making the website look your own. You can take a look at `/src/assets/stylesheets/app.css` to get a sense for how Tailwind works.
 1. **Set your own videos:** There's a `src/_highlights` folder. In this Each file contains something you want to highlight. Add or remove de `.md` files do add or remove highlights. The first one will be the first video available. They are also used to build the Highlight section of the website.
-1. **Set your own text:** There's a `src/_data/site.yaml` file. You'll find you can customize most of the site's texts there. You can set the navigation links, highlight texts, and display messages to your users.
 1. **ADVANCED: Fetch your data on compile time:** There's a `src/_data/lorem.js` file. It demonstrates how to fetch data from your own API during compile time. This way, you can have your content updated on each new deploy. **Be sure to remove `src/_data/lorem.js` file** if you're not going to use it. It makes real requests during build time. If you are not going to use the data fetched it is simply making unnecessary requests to the server and making your build time slower.
 
 ## Want to dive deeper?
@@ -256,6 +257,91 @@ That's it!
 We made our select have rounded borders. We also used a configurable color from our `tailwind.config.js` file. Did you notice that we set the border color to 'light'? There is no such color by default, but it is configured in our `tailwind.config.js` file.
 
 Now, if someone wishes to change the theme, a quick tweak to the config file will do.
+
+# Using HMAC Validation
+
+Foxy.io supports using HMAC signatures to cryptographically protect your add-to-cart links and forms. Though this is less a concern for non-profit organizations accepting donations, it is nonetheless worth implementing if you're able.
+
+This minisite includes functionality to make it straightforward to setup the link & form signature functionality, which is documented below. If you need more information or intend to customize the implementation, please, refer to the documentation at https://wiki.foxycart.com/v/2.0/hmac_validation
+
+## Easy setup
+
+This minisite comes with an easy to use setup of HMAC validation.
+
+In order to use this feature you need to:
+
+- provide your Store Secret (or the specific "HMAC signature generation" key within your store secret) as an environment variable
+- provide a `code` parameter for each product
+- configure your store to use HMAC validation (a checkbox in the Advanced Settings of your store)
+
+### Provide your HMAC Secret
+
+#### First, get your HMAC secret
+
+Navigate to you store admin page in Foxy.io
+
+https://admin.foxycart.com/admin.php
+
+Then, visit the Advanced link: https://admin.foxycart.com/admin.php?ThisAction=EditAdvancedFeatures
+
+![](docs/img/step1.png)
+
+Look for a field called "store secret", click the "Show button" and copy your secret.
+
+![](docs/img/step2.png)
+
+Note that you may have a JSON-formatted secret that includes multiple values. In that case, copy out the `cart_signing` value.
+
+##### While we're here, configure your store to use HMAC validation
+
+To do that, check the "would you like to enable cart validation" box in the same page.
+
+![](docs/img/step3.png)
+
+#### Second, provide the secret to your deploy
+
+When you click the "Deploy to Netlify" button, Netlify will ask you some questions. One of them is your store secret. If you provide it there, this step will not be necessary.
+
+Go to your account in Netlify, choose the appropriate site and follow these steps:
+
+1. Click Overview;
+1. Click Site Settings;
+1. Build and Deploy
+1. Environments
+
+You'll find this form:
+
+![](docs/img/step4.png)
+
+The key must be FOXYSTORESECRET and the value is your secret.
+
+```
+Key : FOXYSTORESECRET
+Value: You Secret
+```
+
+### Provide a code for each product
+
+The products in the **products** folder may have a field called `code` (which you can think of as a `SKU` if you prefer that term). This code is needed for the HMAC Validation to be correctly used. This code is a product identifier and you may use whater code you please, provided each product has its own unique code.
+
+Here is an example from `src/product/product2.md`
+
+```markdown
+---
+tags:
+  - product
+name: Weary Black Wall
+price: 468
+price_monthly: 39
+image: /static/img/product9.jpg
+image_alt_text: Non risu potius quam oratione eiciendum? N
+code: WEA4983901
+---
+
+Non risu potius quam oratione eiciendum? Nihil enim hoc differt.
+```
+
+Notice the code `WEA4983901`. Only products with codes such as this will be signed. Other products **will error when added to the cart**. So just make sure all your products have a code (and that the codes are unique per product).
 
 # Where to go from here?
 

@@ -7,10 +7,11 @@ description: "Fourteen years ago when we rescued two very sick little girls, God
 url: "http://enter.giof.org/"
 author: "GIOF"
 meta_data:
-  twitter: "@"
+  twitter: "@foxycart" # Used in the meta tags
   default_social_image: "/static/logo.png"
 
 # Careful! Use quotes around your links.
+# You can add additional nav items, and the urls can be external links.
 navigation:
   - name: Welcome
     url: "#welcome"

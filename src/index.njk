@@ -27,7 +27,7 @@ title: Genesis International Orphanage Foundation
 
   {% markdown site.texts.highlightsText %}
 
-  <ul class="list-disc px-8 text-left">
+  <ul>
 
     {# TIP: Iterate over a collection
     This collection can be created simply by creating a folder with a name
@@ -143,6 +143,7 @@ title: Genesis International Orphanage Foundation
                 currency: site.currency_symbol,
                 price: product.data.price,
                 color: 'primary',
+                code: product.data.code,
                 text: 'Once'
               } %}
               {% include "addtocart_button.njk" %}
@@ -152,11 +153,12 @@ title: Genesis International Orphanage Foundation
             {% if product.data.price_monthly %}
             <div class="w-1/3 px-0">
               {% set addToCartBtn = {
-              product: product.data,
-              currency: site.currency_symbol,
-              price: product.data.price_monthly,
-              color: 'primary-dark',
-              text: 'Monthly'
+		product: product.data,
+		currency: site.currency_symbol,
+		price: product.data.price_monthly,
+		color: 'primary-dark',
+		code: product.data.code,
+		text: 'Monthly'
               }
             %}
               {% include "addtocart_button.njk" %}
