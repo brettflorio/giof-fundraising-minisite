@@ -8,6 +8,7 @@ const FoxySigner = require("@foxy.io/node-api/dist/utils/signer");
 // buttons
 let hmacSign = null;
 if (process.env.FOXYSTORESECRET) {
+	console.log("FOXYSTORESECRET is set.");
 	hmacSign = new FoxySigner.FoxySigner();
 	hmacSign.setSecret(process.env.FOXYSTORESECRET);
 }
@@ -106,6 +107,7 @@ module.exports = function (eleventyConfig) {
 			outputPath
 		) {
 			if (outputPath.endsWith(".html")) {
+				console.log(`Signing ${outputPath}…`);
 				content = hmacSign.htmlString(content);
 			}
 			return content;
