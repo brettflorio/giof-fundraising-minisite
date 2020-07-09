@@ -343,6 +343,15 @@ Non risu potius quam oratione eiciendum? Nihil enim hoc differt.
 
 Notice the code `WEA4983901`. Only products with codes such as this will be signed. Other products **will error when added to the cart**. So just make sure all your products have a code (and that the codes are unique per product).
 
+# Merging New Features to Your Site
+
+When using the Deploy to Netlify button, it creates a clone of this repo, and _not a fork_. As such, it's just a little more work to merge new features from Foxy/eleventy-fundraising-minisite into your own version. First, you'll need to clone the repo locally on your computer. (Can't do this from the Github interface.) Then…
+
+1. Run `git remote add upstream git@github.com:Foxy/eleventy-fundraising-minisite.git` to add the official Foxy/eleventy-fundraising-minisite repo.
+1. Run `git fetch upstream`
+1. Run `git merge upstream/master`
+1. Review any merge conflicts, commit, and push to your own repo so Netlify deploys.
+
 # Where to go from here?
 
 Go ahead and click the deploy button. It will fork this repository for you and deploy a version to production. Go ahead and customize the files at will. You'll find some handy tips along the way.
