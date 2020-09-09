@@ -66,6 +66,43 @@ title: Genesis International Orphanage Foundation
 
 <hr />
 
+<section id="donate" class="pt-8 p-8 md:p-12 pb-0 md:pb-0 text-left relative">
+  {% include 'backToTop.njk' %}
+  <h2>{{ site.texts.donateTitle }}</h2>
+
+    <style>
+    html {
+      --lumo-primary-text-color: #05668D;
+      --lumo-primary-color-50pct: rgba(2, 128, 144, 0.5);
+      --lumo-primary-color-10pct: rgba(2, 128, 144, 0.1);
+      --lumo-primary-color: #028090;
+      --lumo-header-text-color: #05668D;
+      --lumo-body-text-color: #028090;
+      --lumo-primary-contrast-color: #fefff5;
+      --lumo-tint-5pct: rgba(240, 243, 189, 0.05);
+      --lumo-tint-10pct: rgba(240, 243, 189, 0.1);
+      --lumo-tint-20pct: rgba(240, 243, 189, 0.2);
+      --lumo-tint-30pct: rgba(240, 243, 189, 0.3);
+      --lumo-tint-40pct: rgba(240, 243, 189, 0.4);
+      --lumo-tint-50pct: rgba(240, 243, 189, 0.5);
+      --lumo-tint-60pct: rgba(240, 243, 189, 0.6);
+      --lumo-tint-70pct: rgba(240, 243, 189, 0.7);
+      --lumo-tint-80pct: rgba(240, 243, 189, 0.8);
+      --lumo-tint-90pct: rgba(240, 243, 189, 0.9);
+      --lumo-tint: #F0F3BD;
+      --lumo-secondary-text-color: #02C39A;
+    }
+  </style>
+
+  <script type="module" src="https://static.www.foxycart.com/beta/foxy-elements/0.3.0/foxy-donation.js"></script>
+  <div class="pt-4 pb-8">
+    <foxy-donation store="giof" currency="usd" amount="100" name="One-Time Donation" amounts="[25, 50, 100, 500, 1000]"
+      custom='["amount", "designation"]' designations='["Area of Greatest Need", "Medical Care", "Daily Meals", "Rancho Génesis Upkeep"]'
+      designation='["Area of Greatest Need"]' frequency="1m" frequencies='["0d", "1m", "2m", "3m"]'>
+    </foxy-donation>
+  </div>
+</section>
+
 <section id="products" class="pt-8 p-8 md:p-12 pb-0 md:pb-0 text-left relative">
   {% include 'backToTop.njk' %}
   <h2>{{ site.texts.productsTitle }}</h2>

@@ -17,13 +17,13 @@ navigation:
     url: "#welcome"
     description: Return to the top
   - name: DONATE
+    url: "#donate"
+    description: Help support us
+  - name: Needed Items
     url: "#products"
     description: Help support us
   - name: Contact
     url: "http://giof.org/contact-us/"
-    description:
-  - name: Support Us
-    url: "http://giof.org/support_giof/"
     description:
 
 # The following are the headings for the navigation
@@ -31,7 +31,8 @@ texts:
   highlightsTitle: "Watch our 2020 Videos!"
   highlightsText: "Click the links below to load up videos showing what we've been doing."
   aboutTitle: ""
-  productsTitle: "Donation Items"
+  donateTitle: "Support Us"
+  productsTitle: "Help Us with Needed Supplies"
 
 currency_symbol: $
 
