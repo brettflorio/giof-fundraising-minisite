@@ -9,12 +9,13 @@ module.exports = {
 				// TIP: you can nest your properties.
 				// Color scheme from https://coolors.co/05668d-028090-00a896-02c39a-f0f3bd
 				primary: {
-					default: "#028090",
-					dark: "#05668D",
+					// default: "#028090",
+					default: "#66a9dd",
+					dark: "#224870",
 				},
-				secondary: "#02C39A",
-				dark: "#00A896",
-				light: "#F0F3BD",
+				secondary: "#2A4494",
+				dark: "#122C34",
+				light: "#122C34",
 			},
 		},
 	},

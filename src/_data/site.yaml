@@ -13,9 +13,9 @@ meta_data:
 # Careful! Use quotes around your links.
 # You can add additional nav items, and the urls can be external links.
 navigation:
-  - name: Welcome
-    url: "#welcome"
-    description: Return to the top
+  - name: Home
+    url: "https://genesisdiez.org/"
+    description: Return to the home page
   - name: DONATE
     url: "#donate"
     description: Help support us
@@ -23,7 +23,7 @@ navigation:
     url: "#products"
     description: Help support us
   - name: Contact
-    url: "http://giof.org/contact-us/"
+    url: "https://genesisdiez.org/contact-us/"
     description:
 
 # The following are the headings for the navigation

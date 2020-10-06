@@ -3,6 +3,7 @@
 
 html {
 	scroll-behavior: smooth;
+	font-family: "Open Sans", sans-serif;
 }
 
 /* TIP: You can use Tailwind utilities in your CSS files */
@@ -39,22 +40,30 @@ img#logo {
 	@apply pb-0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: Merriweather, serif;
+}
+
 h1 {
-	@apply text-3xl text-left text-primary-dark font-bold leading-none pb-2;
+	@apply text-3xl text-left text-primary-dark font-bold leading-snug pb-2;
 }
 h2 {
-	@apply text-2xl text-left text-primary font-bold leading-none pb-2;
+	@apply text-2xl text-left text-primary font-bold leading-snug pb-2;
 }
 h3 {
-	@apply text-xl text-left text-primary font-bold leading-none pb-2;
+	@apply text-xl text-left text-primary font-bold leading-snug pb-2;
 }
 h4 {
-	@apply text-lg text-left text-primary font-bold leading-none pb-2;
+	@apply text-lg text-left text-primary font-bold leading-snug pb-2;
 }
 p,
 ol,
 ul {
 	@apply pb-4;
+	font-family: "Open Sans", sans-serif;
 }
 ul {
 	@apply list-disc px-8 text-left;
