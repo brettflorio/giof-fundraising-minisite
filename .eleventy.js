@@ -101,18 +101,18 @@ module.exports = function (eleventyConfig) {
 	// Folders to copy to build dir (See. 1.1)
 	eleventyConfig.addPassthroughCopy("src/static");
 
-	if (hmacSign) {
-		eleventyConfig.addTransform("foxyHmacValidation", function (
-			content,
-			outputPath
-		) {
-			if (outputPath.endsWith(".html")) {
-				console.log(`Signing ${outputPath}…`);
-				content = hmacSign.htmlString(content);
-			}
-			return content;
-		});
-	}
+	// if (hmacSign) {
+	// 	eleventyConfig.addTransform("foxyHmacValidation", function (
+	// 		content,
+	// 		outputPath
+	// 	) {
+	// 		if (outputPath.endsWith(".html")) {
+	// 			console.log(`Signing ${outputPath}…`);
+	// 			content = hmacSign.htmlString(content);
+	// 		}
+	// 		return content;
+	// 	});
+	// }
 
 	// if (process.env.ELEVENTY_ENV === "production") {
 	// 	// Minify HTML (including inlined CSS and JS)
