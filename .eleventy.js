@@ -114,22 +114,22 @@ module.exports = function (eleventyConfig) {
 		});
 	}
 
-	if (process.env.ELEVENTY_ENV === "production") {
-		// Minify HTML (including inlined CSS and JS)
-		eleventyConfig.addTransform("compressHTML", function (content, outputPath) {
-			if (outputPath.endsWith(".html")) {
-				const minified = htmlmin.minify(content, {
-					useShortDoctype: true,
-					removeComments: true,
-					collapseWhitespace: true,
-					minifyCSS: true,
-					minifyJS: true,
-				});
-				return minified;
-			}
-			return content;
-		});
-	}
+	// if (process.env.ELEVENTY_ENV === "production") {
+	// 	// Minify HTML (including inlined CSS and JS)
+	// 	eleventyConfig.addTransform("compressHTML", function (content, outputPath) {
+	// 		if (outputPath.endsWith(".html")) {
+	// 			const minified = htmlmin.minify(content, {
+	// 				useShortDoctype: true,
+	// 				removeComments: true,
+	// 				collapseWhitespace: true,
+	// 				minifyCSS: true,
+	// 				minifyJS: true,
+	// 			});
+	// 			return minified;
+	// 		}
+	// 		return content;
+	// 	});
+	// }
 
 	// https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
