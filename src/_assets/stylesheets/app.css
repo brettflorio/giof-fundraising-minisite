@@ -65,6 +65,9 @@ ul {
 	@apply pb-4;
 	font-family: "Open Sans", sans-serif;
 }
+#welcome p {
+	@apply mt-1 mt-4 max-w-lg m-auto leading-loose mb-6 text-left;
+}
 ul {
 	@apply list-disc px-8 text-left;
 }

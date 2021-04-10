@@ -3,53 +3,20 @@ layout: onepage.njk
 title: Genesis International Orphanage Foundation
 ---
 
-<section id="welcome" class="pt-8 p-8 md:p-12 text-left">
-  <h1>
-    {{ site.title }}
-  </h1>
+<section id="welcome" class="font-sans container m-auto flex flex-col py-8 max-w-xl text-center px-6">
+  <h1 class="my-8 max-w-full m-auto text-2xl md:text-3xl lg:text-4xl font-medium">{{ site.title }}</h1>
   <h2>
-    {{ site.subtitle }}
+    {{ site.subtitle|safe }}
   </h2>
-
   {% set welcome %}{% include './_data/welcome.md' %}{% endset %}
   {% markdown welcome %}
-
-  {# {% if site.texts.presentation %}
-    <div>
-      {{ site.texts.presentation }}
-    </div>
-  {% endif %} #}
-
-  {% if collections.highlight.length > 1 %}
-  <h4>
-    {{ site.texts.highlightsTitle }}
-  </h4>
-
-  {% markdown site.texts.highlightsText %}
-
-  <ul>
-
-    {# TIP: Iterate over a collection
-    This collection can be created simply by creating a folder with a name
-    starting with "_" within the src folder.
-    Inside this folder create your items as markdown files.
-
-    Learn more at: https://www.11ty.dev/docs/collections/
-    #}
-    {%- for highlight in collections.highlight -%}
-      <li>
-        <button class="underline hover:no-underline text-primary" data-action="setVideoUrl" data-url="{{highlight.data.video.embed}}">{{highlight.data.name}}</button>
-      </li>
-    {%- endfor -%}
-  </ul>
-  {% endif %}
-
 </section>
+
 
 {% if site.texts.aboutTitle %}
 <hr />
 
-<section id="about" class="pt-8 p-8 md:p-12 text-left relative">
+<section id="welcome" class="font-sans container m-auto flex flex-col py-8 max-w-xl text-center px-6">
   {% include 'backToTop.njk' %}
   <h2>{{ site.texts.aboutTitle }}</h2>
 
@@ -66,7 +33,8 @@ title: Genesis International Orphanage Foundation
 
 <hr />
 
-<section id="donate" class="pt-8 p-8 md:p-12 pb-0 md:pb-0 text-left relative">
+
+<section id="donate" class="font-sans container m-auto flex flex-col py-8 max-w-xl text-center px-6">
   {% include 'backToTop.njk' %}
   <h2>{{ site.texts.donateTitle }}</h2>
 
@@ -102,7 +70,9 @@ title: Genesis International Orphanage Foundation
   </div>
 </section>
 
-<section id="products" class="pt-8 p-8 md:p-12 pb-0 md:pb-0 text-left relative">
+
+
+<section id="products" class="font-sans container m-auto flex flex-col py-8 max-w-xl text-center px-6">
   {% include 'backToTop.njk' %}
   <h2>{{ site.texts.productsTitle }}</h2>
 </section>
@@ -110,7 +80,7 @@ title: Genesis International Orphanage Foundation
 <section class="container p-2 pb-4 m-auto flex w-full flex-wrap items-stretch justify-start relative">
   {% for product in collections.product | sortByPriceHighToLow %}
 
-    <div class="flex flex-col items-center w-full lg:w-1/2 p-2">
+    <div class="flex flex-col items-center w-full lg:w-1/3 md:w-1/2 p-2">
       {# TIP: Use includes to avoid repetition
           11ty recognizes template files in the _includes folder.
       #}
@@ -155,7 +125,7 @@ title: Genesis International Orphanage Foundation
 
           <hr class="my-3">
 
-          <div class="flex flex-wrap leading-7 text-sm space-x-2 justify-between">
+          <div class="flex flex-wrap leading-7 text-sm xspace-x-2 xjustify-between">
             {% include "custom_number_input.njk" %}
 
             {% if product.data.price < 10000 %}
