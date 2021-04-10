@@ -7,4 +7,4 @@ image: /static/img/beautiful gate landscape.jpg
 image_alt_text:
 ---
 
-RG has been "hibernated" (a huge financial shock) due to COVID -19, to all but small amigo mission teams for construction, but the cost of RG ministry continues.
+RG will be opening with modified limited occupancy due to COVID -19, to all but small amigo mission teams. Most Mission teams will not attend this summer but the cost of RG ministry continues.

@@ -3,7 +3,7 @@
   class="rounded-md overflow-hidden shadow-lg border-light border-2 h-full w-full">
   {% if product.data.image %}
   <div>
-    {%  productPicture product.data.image, product.data.image_alt_text %}
+    {% productPicture product.data.image, product.data.image_alt_text %}
   </div>
   {% endif %}
 
@@ -74,7 +74,7 @@
           currency: site.currency_symbol,
           price: product.data.price_monthly,
           color: 'primary-dark',
-          text: 'Monthly' 
+          text: 'Monthly'
           }
         %}
         {% include "addtocart_button.njk" %}
