@@ -33,6 +33,18 @@ title: Genesis International Orphanage Foundation
 
 <hr />
 
+{% if site.livestream %}
+  <section id="conference" class="font-sans container m-auto flex flex-col py-8 max-w-xl text-center px-6">
+    <div id="conference-video">
+      <iframe width="100%" height="415" src="https://www.youtube.com/embed/{{ site.livestream }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    {% if site.livestreamDomain %}
+      <div id="conference-chat">
+        <iframe width="100%" height="415" src="https://www.youtube.com/live_chat?v={{ site.livestream }}&embed_domain={{ site.livestreamDomain }}"></iframe>
+      </div>
+    {% endif %}
+  </section>
+{% endif %}
 
 <section id="donate" class="font-sans container m-auto flex flex-col py-8 max-w-xl text-center px-6">
   {% include 'backToTop.njk' %}
