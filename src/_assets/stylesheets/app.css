@@ -1,9 +1,32 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	@variants responsive {
+		.h-big {
+			height: 30rem;
+		}
+		.h-bigger {
+			height: 40rem;
+		}
+	}
+}
 
 html {
 	scroll-behavior: smooth;
 	font-family: "Open Sans", sans-serif;
+}
+
+.text-primary {
+	--text-opacity: 1;
+	color: #66a9dd;
+	color: rgba(102, 169, 221, var(--text-opacity));
+}
+.border-primary {
+	--border-opacity: 1;
+	border-color: #66a9dd;
+	border-color: rgba(102, 169, 221, var(--border-opacity));
 }
 
 /* TIP: You can use Tailwind utilities in your CSS files */

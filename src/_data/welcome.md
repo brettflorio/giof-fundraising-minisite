@@ -2,4 +2,4 @@ Join us in celebrating together virtually with many wonderful loving like minded
 
 ### DOUBLE down helping us in offering healing to abandoned / rescued traumatized children!!
 
-**\$24K Matching Grant — Double Your Impact!**
+**\$25K Matching Grant — Double Your Impact!**
