@@ -1,10 +1,10 @@
 # TIP: Variables from this file can be accessed from template files with: {{ site.variable }}. For example: {{ site.title }} or {{ site.description }}
 # You'll want to modify most of this file with your own branding and links.
 
-title: "Genesis 22nd Anniversary Premier Invitation!!" # Appears after the title Page eg. Title - Web Starter
+title: "“Healing Wounded Hearts” Premier Invitation!!" # Appears after the title Page eg. Title - Web Starter
 subtitle: >
   SAVE THE DATE! <br>
-  MAY 7th Friday at 7pm PST
+  MAY 20th Friday at 7pm PST
 description: "Fourteen years ago when we rescued two very sick little girls, God called upon our hearts ❤ to open Beautiful Gate Orphanage. That dream is now a fully functional orphanage dedicated to abandoned special-needs children, whom we call Fragile Butterflies 🦋. We deeply love ❤ them and they bless us abundantly."
 url: "http://enter.giof.org/"
 author: "GIOF"
