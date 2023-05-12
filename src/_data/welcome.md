@@ -1,5 +1,9 @@
-Join us in celebrating together virtually with many wonderful loving like minded Genesis supporters. We will Premier our 2022 30-minute Virtual Event filled with touching stories and information about our new “Opening Hearts Healing Therapy” ministry!!
+There are not enough words to express how thankful we are for people like you.
 
-### DOUBLE down helping us in offering healing to abandoned / rescued traumatized children!!
+Join us as we celebrate virtually with wonderful, loving, like-minded Genesis followers. We will launch our 12-minute video Virtual Event 2023.
 
-**\$25K Matching Grant — Double Your Impact!**
+Find out how you can continue to get involved and what are our dreams to be fulfilled!!!
+
+### DOUBLE Your donation in helping us offer healing to abandoned / rescued traumatized children!!
+
+**\$50K Matching Grant — Double Your Impact!**
