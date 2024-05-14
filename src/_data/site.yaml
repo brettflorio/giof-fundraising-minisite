@@ -54,5 +54,6 @@ social_networks:
     url: "https://www.youtube.com/channel/UCPYuKWST08z9LoMvflR_AIw"
     icon: "fab fa-youtube"
 
-livestream: 9jYQjypT7c8
+livestream:
+# livestream: 9jYQjypT7c8
 livestreamDomain: donate.genesisdiez.org
