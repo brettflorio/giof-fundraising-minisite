@@ -10,7 +10,6 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.11.1",
-		"@11ty/eleventy-img": "^0.2.5",
 		"@babel/core": "^7.12.10",
 		"@babel/preset-env": "^7.12.11",
 		"@foxy.io/node-api": "^1.0.0-beta.8",
