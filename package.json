@@ -42,5 +42,8 @@
 		"hooks": {
 			"pre-commit": "pretty-quick --staged"
 		}
+	},
+	"dependencies": {
+		"sharp": "^0.33.3"
 	}
 }
